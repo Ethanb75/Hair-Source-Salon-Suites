@@ -83,8 +83,8 @@ export default class Carousel extends Component {
       return (
         <img
           src={imageSrc}
-          srcSet={`${respImageList[index]} 600w, ${imageSrc} 1280w`}
-          sizes="(max-width: 600px) 600px, 62vw"
+          // srcSet={`${respImageList[index]} 600w, ${imageSrc} 1280w`}
+          // sizes="100vw"
           key={index}
           style={currentSlide === index ? { opacity: 1 } : {}}
           alt=""

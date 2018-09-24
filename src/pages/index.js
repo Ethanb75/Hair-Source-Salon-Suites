@@ -13,6 +13,7 @@ import salon2 from '../assets/salon2.jpg';
 import salon3 from '../assets/salon3.jpg';
 import salon4 from '../assets/salon4.jpg';
 
+
 import salonIcon from '../assets/barber.svg';
 import cosmeticIcon from '../assets/cosmetics.svg';
 import cameraIcon from '../assets/camera.svg';
@@ -45,6 +46,7 @@ export default class IndexPage extends Component {
           </div>
           <div className="header__carousel">
             <Carousel />
+            <div className="mobileBack"></div>
           </div>
         </header>
         <div className="header__caller"></div>

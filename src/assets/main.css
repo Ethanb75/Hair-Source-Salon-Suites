@@ -835,4 +835,7 @@ div.flair {
   .suiteExamples > div:nth-of-type(1) h2, .suiteExamples > div:nth-of-type(1) p {
     padding: 0  calc(var(--grid) * 2);
   }
+  footer.footer {
+    padding: calc(var(--grid) * 5) calc(var(--grid) * 1.5);
+  }
 }

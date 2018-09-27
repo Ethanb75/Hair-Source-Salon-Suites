@@ -224,9 +224,30 @@ export default class IndexPage extends Component {
           </div>
 
           <div className="footer__links">
-            <span>Top</span>
-            <span>Portfolio</span>
-            <span>solutions</span>
+            <span onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Top</span>
+            <span onClick={
+              () => {
+                document
+                  .querySelector('.suiteExamples')
+                  .scrollIntoView({
+                    behavior: 'smooth'
+                  })
+              }
+            }>Portfolio</span>
+            <span onClick={
+              () => {
+                document
+                  .querySelector('.featured')
+                  .scrollIntoView({
+                    behavior: 'smooth'
+                  })
+              }
+            }>solutions</span>
+          </div>
+          <div className="copy">
+            <span>
+              Icons: <a href="https://creativemarket.com/eucalyp" rel="nofollow">Eucalyp</a>, <a href="www.flaticon.com" rel="nofollow">flaticon.com</a>
+            </span>
           </div>
 
           <div className="footer__back"></div>

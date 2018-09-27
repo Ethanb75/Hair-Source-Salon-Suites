@@ -568,11 +568,27 @@ div.flair {
   color: #d0d0d0;
 }
 
+.footer__links span {
+  cursor: pointer;
+}
+
 .footer__links span:nth-of-type(2) {
   margin: 0 calc(var(--grid) * 1.5);
   border-left: 1px solid #777;
   border-right: 1px solid #777;
   padding: 0 calc(var(--grid) * 1.5);
+}
+
+.copy {
+  margin: var(--grid) 0;
+  text-align: center;
+  color: #777;
+  position: relative;
+  z-index: 1;
+}
+
+.copy a {
+  color: #DB131380;
 }
 
 @media screen and (max-width: 1440px) {
@@ -871,5 +887,14 @@ div.flair {
 @media screen and (max-width: 350px) {
   .header {
     height: 100vh;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header {
+    height: 110vh;
+  }
+  .featured__button .button {
+    padding: calc(var(--grid) / 2) var(--grid)
   }
 }

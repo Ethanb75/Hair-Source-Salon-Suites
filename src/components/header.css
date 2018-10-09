@@ -18,6 +18,7 @@
   width: calc(var(--grid) * 5);
   margin-left: calc(var(--grid) * 2);
   margin-top: calc(var(--grid) / 2);
+  display: none;
 }
 
 .menu {
@@ -77,6 +78,10 @@
 @media screen and (max-width: 600px) {
   .nav {
     width: 100%;
+    justify-content: center;
+  }
+  .menu {
+    margin-right: 0;
   }
   .menu li button {
     color: white;

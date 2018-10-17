@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Carousel.css';
 
 import cover1 from '../assets/header1.jpeg';
+import salon1 from '../assets/salon1.jpg';
 import cover2 from '../assets/header2.jpeg';
 import cover3 from '../assets/header3-2.jpg';
 
@@ -16,7 +17,7 @@ const CAROUSEL_TIMER = 8000;
 export default class Carousel extends Component {
   state = {
     currentSlide: 0,
-    imageList: [cover1, cover2, cover3],
+    imageList: [cover1, cover2, cover3, salon1],
     respImageList: [cover1Small, cover2Small, cover3Small]
   }
 
@@ -107,7 +108,7 @@ export default class Carousel extends Component {
         {imageElements}
         <div className="carousel__controls">
           <div className="carousel__counter">
-            {'0' + currentSlide} / {'0' + imageList.length}
+            {'0' + (currentSlide + 1)} / {'0' + imageList.length}
           </div>
           <div>
             {productImageSelectButtons}

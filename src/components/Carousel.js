@@ -5,6 +5,8 @@ import cover1 from '../assets/header1.jpeg';
 import salon1 from '../assets/salon1.jpg';
 import cover2 from '../assets/header2.jpeg';
 import cover3 from '../assets/header3-2.jpg';
+import cover4 from '../assets/cover1.jpg';
+import cover5 from '../assets/cover2.jpg';
 
 import cover1Small from '../assets/header1-sm.jpeg';
 import cover2Small from '../assets/header2-sm.jpeg';
@@ -17,7 +19,7 @@ const CAROUSEL_TIMER = 8000;
 export default class Carousel extends Component {
   state = {
     currentSlide: 0,
-    imageList: [cover1, cover2, cover3, salon1],
+    imageList: [cover3, cover4, cover5, salon1],
     respImageList: [cover1Small, cover2Small, cover3Small]
   }
 

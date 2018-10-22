@@ -13,6 +13,7 @@ import salon2 from '../assets/salon2.jpg';
 import salon3 from '../assets/salon3.jpg';
 import salon4 from '../assets/salon4.jpg';
 
+import cover4 from '../assets/cover2.jpg';
 
 import salonIcon from '../assets/barber.svg';
 import cosmeticIcon from '../assets/cosmetics.svg';
@@ -57,7 +58,7 @@ export default class IndexPage extends Component {
           {/* section to describe comp */}
           <section className="intro">
             <div>
-              <img src={introImg} />
+              <img src={cover4} />
             </div>
             <div>
               <div className="intro__wrap">

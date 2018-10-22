@@ -623,9 +623,13 @@ div.flair {
     font-size: 3.842em;
     margin-bottom: calc(var(--grid) * 1.5);
   }
+  .header__logo {
+    width: 75%;
+  }
   .header__intro {
     width: 38vw;
     min-width: 38vw;
+    align-items: center;
   }
   .header__button {
     width: 45vw;
